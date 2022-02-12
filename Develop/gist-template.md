@@ -4,9 +4,11 @@ Introductory paragraph (replace this with your text)
 
 ## Summary
 
--- MATCHING A URL
-
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial specifically covers regular expressions for matching a URL. The table of contents diplays everything that will be explaining about this type of regular expression.
+A website name can only contain letters A-Z(capital or lowercase), the digits 0-9, a hyphen(-), and a period(.com). This is an example of a regular expression for matching a url.
+```
+EXAMPLE WILL GO HERE!!!
+```
 
 ## Table of Contents
 
