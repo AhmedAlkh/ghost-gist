@@ -27,6 +27,13 @@ EXAMPLE WILL GO HERE!!!
 ## Regex Components
 
 ### Anchors
+Anchors do not match any characters, they match the position of a character(before or after).
+The caret ^ matches at the beggining of the text while the dollar sign \$ matches and the end.
+If the expression is "^s", then the text must start with an "s". If the expression is "d$", then the text must end with a "d".
+```
+Expression: ^s        start = match 
+Expression: d$        end = match
+```
 
 ### Quantifiers
 
@@ -57,3 +64,4 @@ GitHub: https://github.com/AhmedAlkh
 ```
 CODE BLOCK
 ```
+[-a-zA-Z0-9.]{1,256}\.[a-zA-Z0-9]{1,6}\b([-a-zA-Z0-9.//]*)
