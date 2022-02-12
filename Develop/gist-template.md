@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Regex Tutorial - Matching a URL
 
 Introductory paragraph (replace this with your text)
 
@@ -51,3 +51,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 My name is Ahmed, I am a full-stack developer in training. I've enrolled in a coding bootcamp at UofT on a journey to learn website and mobile app development.
 
 GitHub: https://github.com/AhmedAlkh
+
+```
+CODE BLOCK
+```
