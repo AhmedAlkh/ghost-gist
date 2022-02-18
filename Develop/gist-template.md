@@ -60,8 +60,22 @@ The OR operator allows the expression to choose from multiple options if one of 
 blue|grey|red - Blue OR grey OR red would be accepted.
 ```
 
-
 ### Character Classes
+
+A character class is a special notation that matches any symbol from a certain set.
+The most common character classes are: 
+* \d – digits.
+* \D – non-digits.
+* \s – space symbols, tabs, newlines.
+* \S – all but \s.
+* \w – Latin letters, digits, underscore '_'.
+* \W – all but \w.
+* . – any character if with the regexp 's' flag, otherwise any except a newline \n.
+```
+Expression: \D
+Input: 123A456
+In this input, the expression would find the 'A'.
+```
 
 ### Flags
 
