@@ -7,7 +7,7 @@ This is a regualar expressions tutorial on matching a URL. The expression will d
 This tutorial specifically covers regular expressions for matching a URL. The table of contents diplays everything that will be explaining about this type of regular expression.
 A website name can only contain letters A-Z(capital or lowercase), the digits 0-9, a hyphen(-), and a period(.com). This is an example of a regular expression for matching a url.
 ```
-EXAMPLE WILL GO HERE!!!
+^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$
 ```
 
 ## Table of Contents
