@@ -112,6 +112,15 @@ Any individual character within the brackets will match.
 
 ### Greedy and Lazy Match
 
+Greedy will try to match the longest string, lazy will try to match the shortest string.
+A greedy match will match the whole string that is accepted including everything inbetween,
+a lazy match will break up the string to only find specifically what it searches for.
+```
+Greedy expression: /".+"/g                                 Lazy expression: /".+?"/g
+Input: 'this will "find" the words "in" double quotes'     Input: 'this will "find" the words "in" double quotes'
+Greedy result: "find" the words "in"                       Lazy result: "find", "in"
+```
+
 ### Boundaries
 
 ### Back-references
