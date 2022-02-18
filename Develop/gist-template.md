@@ -79,6 +79,17 @@ In this input, the expression would find the 'A'.
 
 ### Flags
 
+Flags are optional parameters to a regular expression that will modify the search.
+A flag is denoted using a single lowercase alphabetic character.
+There are 6 flags:
+* i (Ignore Casing) - The search is not case sensitive
+* g (Global) - Search for all occurrences on a global scope
+* s (Dot all) - Makes the wild character . match newlines as well
+* m (Multiline) - Boundary characters ^ and $ match the beginning and ending of every single line.
+* y (Sticky) - Expression starts searching from the index indicated in its lastIndex property.
+* u (Unicode) - Expression assumes individual characters as code points, not code units, thus matching 32-bit characters as well.
+
+
 ### Grouping and Capturing
 
 ### Bracket Expressions
