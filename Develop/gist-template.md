@@ -120,10 +120,24 @@ Greedy expression: /".+"/g                                 Lazy expression: /".+
 Input: 'this will "find" the words "in" double quotes'     Input: 'this will "find" the words "in" double quotes'
 Greedy result: "find" the words "in"                       Lazy result: "find", "in"
 ```
-
 ### Boundaries
 
+The boundary is set by \b at the beggining and end of the expression. 
+It makes it so that the expression will not continue to search beyond the search parameters.
+the boundary says to the expression "we have found what we are searching for, stop searching"
+```
+\b\d{6}\b - will accept 6 digits, no more or less.
+```
 ### Back-references
+
+When defining back-references, you can reuse and reference previous groups in the expression.
+Groups are referenced by the order which they are placed in the expression.
+(group 1 is \1)(group 2 is \2)(group 3 is \3)
+```
+Expression: /(['"])(.*?)\1/g 
+             ( \1 )      ^
+             references group 1
+```
 
 ### Look-ahead and Look-behind
 
