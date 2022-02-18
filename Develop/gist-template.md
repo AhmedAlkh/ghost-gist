@@ -91,6 +91,14 @@ There are 6 flags:
 
 
 ### Grouping and Capturing
+Grouping and capturing refers to the use of parenthesis to seperate groups within a regular expression.
+A whole regular expression can be broken into parts which allows the expression to get part of the match
+as a seperate item in the result array. If there is a quantifier after the parenthesis, it applies to the contents
+of the parenthesis as a whole.
+```
+^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$
+ (     1     ) (     2     )  (     3      )(     4     )
+```
 
 ### Bracket Expressions
 
