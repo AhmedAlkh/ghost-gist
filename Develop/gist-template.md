@@ -27,6 +27,7 @@ A website name can only contain letters A-Z(capital or lowercase), the digits 0-
 ## Regex Components
 
 ### Anchors
+
 Anchors do not match any characters, they match the position of a character(before or after).
 The caret ^ matches at the beggining of the text while the dollar sign \$ matches and the end.
 If the expression is "^s", then the text must start with an "s". If the expression is "d$", then the text must end with a "d".
@@ -37,6 +38,12 @@ Expression: d$        end = match
 
 ### Quantifiers
 
+Quantifiers indicate the number of characters or expressions to match. With a quantifier you can specify how many characters you want the expression to find.
+```
+\d{6} - accepts 6 or more digits(\d represents digits 0-9, {6} represents the length)
+\b\d{6}\b - accepts 6 digits(no more or less, \b sets the restrictions)
+\b\d{3,6}\b - accepts 3-6 digits(length of 3,4,5, or 6 accepted. No more or less)
+```
 
 ### OR Operator
 
@@ -61,8 +68,3 @@ Expression: d$        end = match
 My name is Ahmed, I am a full-stack developer in training. I've enrolled in a coding bootcamp at UofT on a journey to learn website and mobile app development.
 
 GitHub: https://github.com/AhmedAlkh
-
-```
-CODE BLOCK
-```
-[-a-zA-Z0-9.]{1,256}\.[a-zA-Z0-9]{1,6}\b([-a-zA-Z0-9.//]*)
