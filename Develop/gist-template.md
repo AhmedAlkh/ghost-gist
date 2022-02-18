@@ -1,6 +1,6 @@
 # Regex Tutorial - Matching a URL
 
-Introductory paragraph (replace this with your text)
+This is a regualar expressions tutorial on matching a URL. The expression will define criteria that an input must meet in order for the input to be accepted as a URL. You can also create regular expressions for other things such as hex codes, email adresses, and html tags. We will be focusing specifically on a regular expression for a URL.
 
 ## Summary
 
@@ -36,6 +36,7 @@ Expression: d$        end = match
 ```
 
 ### Quantifiers
+
 
 ### OR Operator
 
