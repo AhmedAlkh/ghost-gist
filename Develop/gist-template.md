@@ -1,14 +1,14 @@
 # Regex Tutorial - Matching a URL
 
-This is a regualar expressions tutorial on matching a URL. 
+This is a regular expressions tutorial on matching a URL. 
 The expression will define criteria that an input must meet in order for the input to be accepted as a URL. 
-You can also create regular expressions for other things such as hex codes, email adresses, and html tags. 
+You can also create regular expressions for other things such as hex codes, email addresses, and html tags. 
 We will be focusing specifically on a regular expression for a URL.
 
 ## Summary
 
 This tutorial specifically covers regular expressions for matching a URL. 
-The table of contents diplays everything that will be explaining about this type of regular expression.
+The table of contents diplays everything that will be explained about this type of regular expression.
 A website name can only contain letters A-Z(capital or lowercase), the digits 0-9, a hyphen(-), and a period(.com). 
 This is an example of a regular expression for matching a url.
 ```
@@ -34,7 +34,7 @@ This is an example of a regular expression for matching a url.
 ### Anchors
 
 Anchors do not match any characters, they match the position of a character(before or after).
-The caret ^ matches at the beggining of the text while the dollar sign \$ matches and the end.
+The caret ^ matches at the beggining of the text while the dollar sign \$ matches at the end.
 If the expression is "^s", then the text must start with an "s". 
 If the expression is "d$", then the text must end with a "d".
 ```
@@ -132,7 +132,7 @@ the boundary says to the expression "we have found what we are searching for, st
 
 When defining back-references, you can reuse and reference previous groups in the expression.
 Groups are referenced by the order which they are placed in the expression.
-(group 1 is \1)(group 2 is \2)(group 3 is \3)
+* (group 1 is \1)(group 2 is \2)(group 3 is \3)
 ```
 Expression: /(['"])(.*?)\1/g 
              ( \1 )      ^
@@ -140,6 +140,15 @@ Expression: /(['"])(.*?)\1/g
 ```
 
 ### Look-ahead and Look-behind
+
+Look-ahead and look-behind are useful in instances when we need to match something depending on the context before or after it. 
+ "Look-ahead" and "look-behind" together are referred to as "lookaround".
+```
+X(?=Y) - matches X if followed by Y
+X(?!Y) - matches X if not followed by Y
+(?<=Y)X - matches X if after Y
+(?<!Y)X - matches X if not after Y
+```
 
 ## Author
 
